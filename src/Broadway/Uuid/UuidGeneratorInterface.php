@@ -14,10 +14,10 @@ namespace Broadway\Uuid;
 /**
  * Generates uuids.
  */
-abstract class UuidGenerator
+interface UuidGeneratorInterface
 {
     /**
      * @return string
      */
-    abstract public function generate();
+    public function generate();
 }
