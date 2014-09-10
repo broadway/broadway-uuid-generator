@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the broadway/broadway package.
+ * This file is part of the broadway/uuid-generator package.
  *
  * (c) Qandidate.com <opensource@qandidate.com>
  *
@@ -11,7 +11,7 @@
 
 namespace Broadway\Uuid\Testing;
 
-use Broadway\TestCase;
+use Broadway\Uuid\TestCase;
 
 class MockUuidGeneratorTest extends TestCase
 {

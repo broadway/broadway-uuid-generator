@@ -1,0 +1,14 @@
+{
+    "name": "broadway/uuid-generator",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "rhumsaa/uuid": "~2.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Broadway\\Uuid\\": "src/"
+        }
+    }
+}

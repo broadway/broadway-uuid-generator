@@ -11,13 +11,8 @@
 
 namespace Broadway\Uuid;
 
-/**
- * Generates uuids.
- */
-interface UuidGeneratorInterface
+use PHPUnit_Framework_TestCase;
+
+abstract class TestCase extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @return string
-     */
-    public function generate();
 }
