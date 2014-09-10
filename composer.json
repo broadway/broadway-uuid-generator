@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Broadway\\Uuid\\": "src/"
+            "Broadway\\UuidGenerator\\": "src/"
         }
     }
 }

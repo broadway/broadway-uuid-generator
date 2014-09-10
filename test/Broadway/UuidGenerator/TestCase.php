@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Broadway\Uuid;
+namespace Broadway\UuidGenerator;
 
 use PHPUnit_Framework_TestCase;
 

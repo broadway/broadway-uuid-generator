@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Broadway\Uuid\Testing;
+namespace Broadway\UuidGenerator\Testing;
 
-use Broadway\Uuid\UuidGeneratorInterface;
+use Broadway\UuidGenerator\UuidGeneratorInterface;
 
 /**
  * Mock uuid generator that always generates the same id.

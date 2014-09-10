@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Broadway\Uuid;
+namespace Broadway\UuidGenerator;
 
 /**
  * Generates uuids.

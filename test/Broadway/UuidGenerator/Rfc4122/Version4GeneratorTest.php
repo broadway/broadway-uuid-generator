@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Broadway\Uuid\Rfc4122;
+namespace Broadway\UuidGenerator\Rfc4122;
 
-use Broadway\Uuid\TestCase;
+use Broadway\UuidGenerator\TestCase;
 use Rhumsaa\Uuid\Uuid;
 
 class Version4GeneratorTest extends TestCase
