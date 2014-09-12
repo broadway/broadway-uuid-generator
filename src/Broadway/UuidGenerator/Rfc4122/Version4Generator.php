@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the broadway/broadway package.
+ * This file is part of the broadway/uuid-generator package.
  *
  * (c) Qandidate.com <opensource@qandidate.com>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Broadway\Uuid\Rfc4122;
+namespace Broadway\UuidGenerator\Rfc4122;
 
-use Broadway\Uuid\UuidGeneratorInterface;
+use Broadway\UuidGenerator\UuidGeneratorInterface;
 use Rhumsaa\Uuid\Uuid;
 
 /**

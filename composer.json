@@ -1,0 +1,23 @@
+{
+    "name": "broadway/uuid-generator",
+    "description": "UUID generator for broadway/broadway.",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "rhumsaa/uuid": "~2.4"
+    },
+    "suggest": {
+        "rhumsaa/uuid": "Allows creating UUIDs"
+    },
+    "autoload": {
+        "psr-0": {
+            "Broadway\\UuidGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Broadway\\UuidGenerator\\": "test/"
+        }
+    }
+}
