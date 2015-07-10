@@ -5,7 +5,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "rhumsaa/uuid": "~2.4"
+        "rhumsaa/uuid": "~2.4",
+        "phpunit/phpunit": "~4.0"
     },
     "suggest": {
         "rhumsaa/uuid": "Allows creating UUIDs"
