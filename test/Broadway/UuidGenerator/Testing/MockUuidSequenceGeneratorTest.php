@@ -47,6 +47,28 @@ class MockUuidSequenceGeneratorTest extends TestCase
 
     /**
      * @test
+     */
+    public function it_is_possible_to_provide_a_fresh_sequence_after_instantiation()
+    {
+        $generator = $this->createMockUuidGenerator();
+
+        $sequence = array(
+            'e2d0c739-0005-434c-8d7a-03e29b400566',
+            'e2d0c739-0006-434c-8d7a-03e29b400566',
+            'e2d0c739-0007-434c-8d7a-03e29b400566',
+        );
+        $generator->setUuids($sequence);
+
+        $generatedUuids = array();
+        for ($i = 0; $i < 3; $i++) {
+            $generatedUuids[] = $generator->generate();
+        }
+
+        $this->assertSame($sequence, $generatedUuids);
+    }
+
+    /**
+     * @test
      *
      * @expectedException \RuntimeException
      */

@@ -24,9 +24,17 @@ class MockUuidSequenceGenerator implements UuidGeneratorInterface
     /**
      * @param string[] $uuids
      */
-    public function __construct(array $uuids)
+    public function __construct(array $uuids = array())
     {
-        $this->uuids = (array) $uuids;
+        $this->setUuids($uuids);
+    }
+
+    /**
+     * @param string[] $uuids
+     */
+    public function setUuids(array $uuids)
+    {
+        $this->uuids = $uuids;
     }
 
     /**
