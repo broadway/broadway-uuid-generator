@@ -12,7 +12,6 @@
 namespace Broadway\UuidGenerator\Rfc4122;
 
 use Broadway\UuidGenerator\TestCase;
-use Rhumsaa\Uuid\Uuid;
 
 class Version4GeneratorTest extends TestCase
 {
@@ -35,7 +34,11 @@ class Version4GeneratorTest extends TestCase
         $generator = new Version4Generator();
         $uuid = $generator->generate();
 
-        $uuidObject = Uuid::fromString($uuid);
+        if (class_exists('Ramsey\Uuid\Uuid')) {
+            $uuidObject = \Ramsey\Uuid\Uuid::fromString($uuid);
+        } elseif (class_exists('Rhumsaa\Uuid\Uuid')) {
+            $uuidObject = \Rhumsaa\Uuid\Uuid::fromString($uuid);
+        }
 
         $this->assertEquals(4 , $uuidObject->getVersion());
     }
