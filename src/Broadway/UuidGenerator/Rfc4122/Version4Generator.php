@@ -12,7 +12,6 @@
 namespace Broadway\UuidGenerator\Rfc4122;
 
 use Broadway\UuidGenerator\UuidGeneratorInterface;
-use Rhumsaa\Uuid\Uuid;
 
 /**
  * Generates a version4 uuid as defined in RFC 4122.
@@ -24,6 +23,12 @@ class Version4Generator implements UuidGeneratorInterface
      */
     public function generate()
     {
-        return Uuid::uuid4()->toString();
+        if (class_exists('Ramsey\Uuid\Uuid')) {
+            return \Ramsey\Uuid\Uuid::uuid4()->toString();
+        } elseif (class_exists('Rhumsaa\Uuid\Uuid')) {
+            return \Rhumsaa\Uuid\Uuid::uuid4()->toString();
+        } else {
+            throw new \LogicException('Version4Generator requires library ramsey/uuid.');
+        }
     }
 }
