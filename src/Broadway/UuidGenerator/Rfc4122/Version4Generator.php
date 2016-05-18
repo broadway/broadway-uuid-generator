@@ -12,7 +12,7 @@
 namespace Broadway\UuidGenerator\Rfc4122;
 
 use Broadway\UuidGenerator\UuidGeneratorInterface;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 /**
  * Generates a version4 uuid as defined in RFC 4122.
