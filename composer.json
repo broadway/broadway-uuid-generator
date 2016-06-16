@@ -4,11 +4,8 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require-dev": {
+    "require": {
         "rhumsaa/uuid": "~2.4"
-    },
-    "suggest": {
-        "rhumsaa/uuid": "Allows creating UUIDs"
     },
     "autoload": {
         "psr-0": {
