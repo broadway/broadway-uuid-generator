@@ -5,10 +5,10 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "rhumsaa/uuid": "~2.4"
+        "ramsey/uuid": "~3.0"
     },
     "suggest": {
-        "rhumsaa/uuid": "Allows creating UUIDs"
+        "ramsey/uuid": "Allows creating UUIDs"
     },
     "autoload": {
         "psr-0": {
