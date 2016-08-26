@@ -12,7 +12,7 @@
 namespace Broadway\UuidGenerator\Rfc4122;
 
 use Broadway\UuidGenerator\TestCase;
-use Rhumsaa\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 class Version4GeneratorTest extends TestCase
 {
@@ -40,4 +40,3 @@ class Version4GeneratorTest extends TestCase
         $this->assertEquals(4 , $uuidObject->getVersion());
     }
 }
-
