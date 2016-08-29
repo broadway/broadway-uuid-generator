@@ -5,19 +5,19 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "rhumsaa/uuid": "~2.4"
+        "ramsey/uuid": "^2.4||^3.0"
     },
     "suggest": {
-        "rhumsaa/uuid": "Allows creating UUIDs"
+        "ramsey/uuid": "Allows creating UUIDs"
     },
     "autoload": {
-        "psr-0": {
-            "Broadway\\UuidGenerator\\": "src/"
+        "psr-4": {
+            "Broadway\\UuidGenerator\\": "src/Broadway/UuidGenerator"
         }
     },
     "autoload-dev": {
-        "psr-0": {
-            "Broadway\\UuidGenerator\\": "test/"
+        "psr-4": {
+            "Broadway\\UuidGenerator\\": "test/Broadway/UuidGenerator"
         }
     }
 }
