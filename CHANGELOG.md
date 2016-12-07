@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- **BC Break** We dropped support for ramsey/uuid ^2.0
+
 ## 0.3.0
 
 - added a binary uuid converter
