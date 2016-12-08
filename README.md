@@ -3,9 +3,9 @@ Broadway Uuid Generator
 Uuid generators for your application.
 
 Provides a uuid generator and several testing helpers to use uuids in your
-tests. Random uuid generation is currently powered by [rhumsaa/uuid]
+tests. Random uuid generation is currently powered by [ramsey/uuid]
 
-[rhumsaa/uuid]: https://github.com/ramsey/uuid
+[ramsey/uuid]: https://github.com/ramsey/uuid
 
 ## Example
 
