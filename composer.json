@@ -2,13 +2,11 @@
     "name": "broadway/uuid-generator",
     "description": "UUID generator for broadway/broadway.",
     "license": "MIT",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=5.5.9"
     },
     "require-dev": {
-        "ramsey/uuid": "^2.4||^3.0",
+        "ramsey/uuid": "^3.0",
         "phpunit/phpunit": "^4.8"
     },
     "suggest": {
