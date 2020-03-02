@@ -11,7 +11,7 @@
 
 namespace Broadway\UuidGenerator\Rfc4122;
 
-use Broadway\UuidGenerator\TestCase;
+use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid;
 
 class Version4GeneratorTest extends TestCase
@@ -24,7 +24,7 @@ class Version4GeneratorTest extends TestCase
         $generator = new Version4Generator();
         $uuid = $generator->generate();
 
-        $this->assertInternalType('string', $uuid);
+        $this->assertIsString($uuid);
     }
 
     /**
