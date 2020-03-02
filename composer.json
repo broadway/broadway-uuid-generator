@@ -7,7 +7,7 @@
     },
     "require-dev": {
         "ramsey/uuid": "^3.0",
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^8.0"
     },
     "suggest": {
         "ramsey/uuid": "Allows creating UUIDs"

@@ -11,7 +11,7 @@
 
 namespace Broadway\UuidGenerator\Testing;
 
-use Broadway\UuidGenerator\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class MockUuidGeneratorTest extends TestCase
 {
@@ -23,7 +23,7 @@ class MockUuidGeneratorTest extends TestCase
         $generator = $this->createMockUuidGenerator();
         $uuid      = $generator->generate();
 
-        $this->assertInternalType('string', $uuid);
+        $this->assertIsString($uuid);
     }
 
     /**

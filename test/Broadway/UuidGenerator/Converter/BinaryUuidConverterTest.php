@@ -11,7 +11,7 @@
 
 namespace Broadway\UuidGenerator\Converter;
 
-use Broadway\UuidGenerator\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class BinaryUuidConverterTest extends TestCase
 {
@@ -27,11 +27,11 @@ class BinaryUuidConverterTest extends TestCase
 
     /**
      * @test
-     * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage Invalid UUID string: yolo
      */
     public function it_throws_when_converting_invalid_string_uuid_to_binary_uuid()
     {
+        $this->expectException('InvalidArgumentException');
+        $this->expectExceptionMessage('Invalid UUID string: yolo');
         BinaryUuidConverter::fromString('YOLO');
     }
 
@@ -48,11 +48,11 @@ class BinaryUuidConverterTest extends TestCase
 
     /**
      * @test
-     * @expectedException InvalidArgumentException
-     * @expectedExceptionMessage $bytes string should contain 16 characters.
      */
     public function it_throws_when_converting_invalid_binary_uuid_to_string_uuid()
     {
+        $this->expectException('InvalidArgumentException');
+        $this->expectExceptionMessage('$bytes string should contain 16 characters.');
         BinaryUuidConverter::fromBytes('YOLO');
     }
 }
