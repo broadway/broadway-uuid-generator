@@ -3,7 +3,7 @@
     "description": "UUID generator for broadway/broadway.",
     "license": "MIT",
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=7.2"
     },
     "require-dev": {
         "ramsey/uuid": "^3.0",
