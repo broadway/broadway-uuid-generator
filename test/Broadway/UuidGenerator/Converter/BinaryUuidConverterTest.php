@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the broadway/uuid-generator package.
  *
@@ -22,7 +24,7 @@ class BinaryUuidConverterTest extends TestCase
     {
         $binary = BinaryUuidConverter::fromString('260b70eb-a5b7-4fde-916a-4cc021745c13');
 
-        $this->assertEquals('0x260b70eba5b74fde916a4cc021745c13', '0x' . bin2hex($binary));
+        $this->assertEquals('0x260b70eba5b74fde916a4cc021745c13', '0x'.bin2hex($binary));
     }
 
     /**

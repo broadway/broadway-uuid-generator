@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the broadway/uuid-generator package.
  *
@@ -9,10 +11,11 @@
  * file that was distributed with this source code.
  */
 
-require_once __DIR__ . '/bootstrap.php';
+require_once __DIR__.'/bootstrap.php';
 
-function generateAndOutput5(Broadway\UuidGenerator\UuidGeneratorInterface $generator) {
-    for ($i = 0; $i < 5; $i++) {
+function generateAndOutput5(Broadway\UuidGenerator\UuidGeneratorInterface $generator)
+{
+    for ($i = 0; $i < 5; ++$i) {
         echo sprintf("[%d] %s\n", $i, $generator->generate());
     }
 }
@@ -30,5 +33,5 @@ generateAndOutput5($mockUuidGenerator);
 echo "\n";
 
 echo "A generator that will always return the same sequence of uuids and throw an exception if depleted (for testing):\n";
-$mockUuidSequenceGenerator = new Broadway\UuidGenerator\Testing\MockUuidSequenceGenerator(array(1, 1, 2, 3, 5, 8, 13, 21));
+$mockUuidSequenceGenerator = new Broadway\UuidGenerator\Testing\MockUuidSequenceGenerator([1, 1, 2, 3, 5, 8, 13, 21]);
 generateAndOutput5($mockUuidSequenceGenerator);
