@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the broadway/uuid-generator package.
  *
@@ -21,7 +23,7 @@ class MockUuidGeneratorTest extends TestCase
     public function it_generates_a_string()
     {
         $generator = $this->createMockUuidGenerator();
-        $uuid      = $generator->generate();
+        $uuid = $generator->generate();
 
         $this->assertIsString($uuid);
     }
@@ -33,7 +35,7 @@ class MockUuidGeneratorTest extends TestCase
     {
         $generator = $this->createMockUuidGenerator();
 
-        for ($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 5; ++$i) {
             $this->assertEquals('e2d0c739-53ac-434c-8d7a-03e29b400566', $generator->generate());
         }
     }

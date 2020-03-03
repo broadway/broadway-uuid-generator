@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the broadway/uuid-generator package.
  *
@@ -37,7 +39,6 @@ class Version4GeneratorTest extends TestCase
 
         $uuidObject = Uuid::fromString($uuid);
 
-        $this->assertEquals(4 , $uuidObject->getVersion());
+        $this->assertEquals(4, $uuidObject->getVersion());
     }
 }
-

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the broadway/uuid-generator package.
  *
@@ -34,7 +36,7 @@ class MockUuidSequenceGenerator implements UuidGeneratorInterface
      */
     public function generate()
     {
-        if (count($this->uuids) === 0) {
+        if (0 === count($this->uuids)) {
             throw new RuntimeException('No more uuids in sequence');
         }
 
