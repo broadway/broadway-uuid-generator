@@ -6,7 +6,9 @@ php:
   - 7.4
 
 install:
-  - composer install
+  - make dependencies
 
 script:
-  - vendor/bin/phpunit
+  - make test
+  - make qa
+  - make changelog
