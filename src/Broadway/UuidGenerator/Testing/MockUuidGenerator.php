@@ -20,6 +20,9 @@ use Broadway\UuidGenerator\UuidGeneratorInterface;
  */
 class MockUuidGenerator implements UuidGeneratorInterface
 {
+    /**
+     * @var string
+     */
     private $uuid;
 
     /**
