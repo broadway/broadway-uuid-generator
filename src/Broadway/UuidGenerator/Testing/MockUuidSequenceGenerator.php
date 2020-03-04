@@ -21,6 +21,9 @@ use RuntimeException;
  */
 class MockUuidSequenceGenerator implements UuidGeneratorInterface
 {
+    /**
+     * @var string[]
+     */
     private $uuids;
 
     /**
