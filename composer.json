@@ -23,5 +23,10 @@
         "psr-4": {
             "Broadway\\UuidGenerator\\": "test/Broadway/UuidGenerator"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
     }
 }
