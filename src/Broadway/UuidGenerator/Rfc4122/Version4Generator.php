@@ -21,10 +21,7 @@ use Ramsey\Uuid\Uuid;
  */
 class Version4Generator implements UuidGeneratorInterface
 {
-    /**
-     * @return string
-     */
-    public function generate()
+    public function generate(): string
     {
         return Uuid::uuid4()->toString();
     }

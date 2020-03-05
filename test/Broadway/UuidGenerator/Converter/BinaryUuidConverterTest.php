@@ -20,7 +20,7 @@ class BinaryUuidConverterTest extends TestCase
     /**
      * @test
      */
-    public function it_converts_string_uuid_to_binary_uuid()
+    public function it_converts_string_uuid_to_binary_uuid(): void
     {
         $binary = BinaryUuidConverter::fromString('260b70eb-a5b7-4fde-916a-4cc021745c13');
 
@@ -30,7 +30,7 @@ class BinaryUuidConverterTest extends TestCase
     /**
      * @test
      */
-    public function it_throws_when_converting_invalid_string_uuid_to_binary_uuid()
+    public function it_throws_when_converting_invalid_string_uuid_to_binary_uuid(): void
     {
         $this->expectException('InvalidArgumentException');
         $this->expectExceptionMessage('Invalid UUID string: yolo');
@@ -40,7 +40,7 @@ class BinaryUuidConverterTest extends TestCase
     /**
      * @test
      */
-    public function it_converts_binary_uuid_to_string_uuid()
+    public function it_converts_binary_uuid_to_string_uuid(): void
     {
         $this->assertEquals(
             '260b70eb-a5b7-4fde-916a-4cc021745c13',
@@ -51,7 +51,7 @@ class BinaryUuidConverterTest extends TestCase
     /**
      * @test
      */
-    public function it_throws_when_converting_invalid_binary_uuid_to_string_uuid()
+    public function it_throws_when_converting_invalid_binary_uuid_to_string_uuid(): void
     {
         $this->expectException('InvalidArgumentException');
         $this->expectExceptionMessage('$bytes string should contain 16 characters.');

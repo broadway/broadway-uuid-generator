@@ -17,6 +17,9 @@ use PHPUnit\Framework\TestCase;
 
 class MockUuidSequenceGeneratorTest extends TestCase
 {
+    /**
+     * @var string[]
+     */
     private $uuids = [
         'e2d0c739-0001-434c-8d7a-03e29b400566',
         'e2d0c739-0002-434c-8d7a-03e29b400566',
@@ -27,7 +30,7 @@ class MockUuidSequenceGeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_generates_a_string()
+    public function it_generates_a_string(): void
     {
         $generator = $this->createMockUuidGenerator();
         $uuid = $generator->generate();
@@ -38,7 +41,7 @@ class MockUuidSequenceGeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_generates_the_same_string()
+    public function it_generates_the_same_string(): void
     {
         $generator = $this->createMockUuidGenerator();
 
@@ -50,7 +53,7 @@ class MockUuidSequenceGeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_throws_an_exception_when_pool_is_empty()
+    public function it_throws_an_exception_when_pool_is_empty(): void
     {
         $this->expectException('RuntimeException');
         $generator = $this->createMockUuidGenerator();
@@ -60,7 +63,7 @@ class MockUuidSequenceGeneratorTest extends TestCase
         }
     }
 
-    private function createMockUuidGenerator()
+    private function createMockUuidGenerator(): \Broadway\UuidGenerator\Testing\MockUuidSequenceGenerator
     {
         return new MockUuidSequenceGenerator($this->uuids);
     }

@@ -18,8 +18,5 @@ namespace Broadway\UuidGenerator;
  */
 interface UuidGeneratorInterface
 {
-    /**
-     * @return string
-     */
-    public function generate();
+    public function generate(): string;
 }
