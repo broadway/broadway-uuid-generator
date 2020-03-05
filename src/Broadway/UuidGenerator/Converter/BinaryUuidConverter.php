@@ -20,7 +20,7 @@ class BinaryUuidConverter implements BinaryUuidConverterInterface
     /**
      * {@inheritdoc}
      */
-    public static function fromString($uuid)
+    public static function fromString(string $uuid): string
     {
         return Uuid::fromString($uuid)->getBytes();
     }
@@ -28,7 +28,7 @@ class BinaryUuidConverter implements BinaryUuidConverterInterface
     /**
      * {@inheritdoc}
      */
-    public static function fromBytes($bytes)
+    public static function fromBytes(string $bytes): string
     {
         return Uuid::fromBytes($bytes)->toString();
     }

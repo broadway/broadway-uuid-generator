@@ -21,7 +21,7 @@ class Version4GeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_should_generate_a_string()
+    public function it_should_generate_a_string(): void
     {
         $generator = new Version4Generator();
         $uuid = $generator->generate();
@@ -32,7 +32,7 @@ class Version4GeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_should_generate_a_version_4_uuid()
+    public function it_should_generate_a_version_4_uuid(): void
     {
         $generator = new Version4Generator();
         $uuid = $generator->generate();

@@ -20,7 +20,7 @@ class MockUuidGeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_generates_a_string()
+    public function it_generates_a_string(): void
     {
         $generator = $this->createMockUuidGenerator();
         $uuid = $generator->generate();
@@ -31,7 +31,7 @@ class MockUuidGeneratorTest extends TestCase
     /**
      * @test
      */
-    public function it_generates_the_same_string()
+    public function it_generates_the_same_string(): void
     {
         $generator = $this->createMockUuidGenerator();
 
@@ -40,7 +40,7 @@ class MockUuidGeneratorTest extends TestCase
         }
     }
 
-    private function createMockUuidGenerator()
+    private function createMockUuidGenerator(): \Broadway\UuidGenerator\Testing\MockUuidGenerator
     {
         return new MockUuidGenerator('e2d0c739-53ac-434c-8d7a-03e29b400566');
     }

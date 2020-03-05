@@ -34,10 +34,7 @@ class MockUuidSequenceGenerator implements UuidGeneratorInterface
         $this->uuids = (array) $uuids;
     }
 
-    /**
-     * @return string
-     */
-    public function generate()
+    public function generate(): string
     {
         if (0 === count($this->uuids)) {
             throw new RuntimeException('No more uuids in sequence');

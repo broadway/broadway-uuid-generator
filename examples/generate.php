@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 require_once __DIR__.'/bootstrap.php';
 
-function generateAndOutput5(Broadway\UuidGenerator\UuidGeneratorInterface $generator)
+function generateAndOutput5(Broadway\UuidGenerator\UuidGeneratorInterface $generator): void
 {
     for ($i = 0; $i < 5; ++$i) {
         echo sprintf("[%d] %s\n", $i, $generator->generate());

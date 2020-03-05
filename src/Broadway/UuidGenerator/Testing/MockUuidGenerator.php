@@ -25,18 +25,12 @@ class MockUuidGenerator implements UuidGeneratorInterface
      */
     private $uuid;
 
-    /**
-     * @param string $uuid
-     */
-    public function __construct($uuid)
+    public function __construct(string $uuid)
     {
         $this->uuid = $uuid;
     }
 
-    /**
-     * @return string
-     */
-    public function generate()
+    public function generate(): string
     {
         return $this->uuid;
     }

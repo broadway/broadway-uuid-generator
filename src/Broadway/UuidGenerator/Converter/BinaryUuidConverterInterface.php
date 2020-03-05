@@ -15,17 +15,7 @@ namespace Broadway\UuidGenerator\Converter;
 
 interface BinaryUuidConverterInterface
 {
-    /**
-     * @param string $uuid
-     *
-     * @return string
-     */
-    public static function fromString($uuid);
+    public static function fromString(string $uuid): string;
 
-    /**
-     * @param string $bytes
-     *
-     * @return string
-     */
-    public static function fromBytes($bytes);
+    public static function fromBytes(string $bytes): string;
 }
