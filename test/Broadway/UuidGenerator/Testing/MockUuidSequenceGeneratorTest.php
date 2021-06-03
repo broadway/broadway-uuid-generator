@@ -63,7 +63,7 @@ class MockUuidSequenceGeneratorTest extends TestCase
         }
     }
 
-    private function createMockUuidGenerator(): \Broadway\UuidGenerator\Testing\MockUuidSequenceGenerator
+    private function createMockUuidGenerator(): MockUuidSequenceGenerator
     {
         return new MockUuidSequenceGenerator($this->uuids);
     }
