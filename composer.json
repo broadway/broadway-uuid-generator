@@ -8,7 +8,7 @@
     "require-dev": {
         "ramsey/uuid": "^4.0",
         "phpunit/phpunit": "^8.0",
-        "broadway/coding-standard": "^1.0",
+        "broadway/coding-standard": "^1.2",
         "phpstan/phpstan": "@stable"
     },
     "suggest": {
