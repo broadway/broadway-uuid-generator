@@ -40,7 +40,7 @@ class MockUuidGeneratorTest extends TestCase
         }
     }
 
-    private function createMockUuidGenerator(): \Broadway\UuidGenerator\Testing\MockUuidGenerator
+    private function createMockUuidGenerator(): MockUuidGenerator
     {
         return new MockUuidGenerator('e2d0c739-53ac-434c-8d7a-03e29b400566');
     }
