@@ -7,7 +7,7 @@ tests. Random uuid generation is currently powered by [ramsey/uuid]
 
 [ramsey/uuid]: https://github.com/ramsey/uuid
 
-[![Build Status](https://travis-ci.org/broadway/broadway-uuid-generator.svg?branch=master)](https://travis-ci.org/broadway/broadway-uuid-generator)
+![build status](https://github.com/broadway/broadway-uuid-generator/actions/workflows/ci.yml/badge.svg)
 
 ## Example
 
