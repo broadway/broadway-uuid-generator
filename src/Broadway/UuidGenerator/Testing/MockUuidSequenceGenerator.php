@@ -14,7 +14,6 @@ declare(strict_types=1);
 namespace Broadway\UuidGenerator\Testing;
 
 use Broadway\UuidGenerator\UuidGeneratorInterface;
-use RuntimeException;
 
 /**
  * Mock uuid generator that always generates a given sequence of uuids.
@@ -37,7 +36,7 @@ class MockUuidSequenceGenerator implements UuidGeneratorInterface
     public function generate(): string
     {
         if (0 === count($this->uuids)) {
-            throw new RuntimeException('No more uuids in sequence');
+            throw new \RuntimeException('No more uuids in sequence');
         }
 
         return array_shift($this->uuids);
