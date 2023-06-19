@@ -17,17 +17,11 @@ use Ramsey\Uuid\Uuid;
 
 class BinaryUuidConverter implements BinaryUuidConverterInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public static function fromString(string $uuid): string
     {
         return Uuid::fromString($uuid)->getBytes();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public static function fromBytes(string $bytes): string
     {
         return Uuid::fromBytes($bytes)->toString();
