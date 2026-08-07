@@ -9,7 +9,7 @@
         "ramsey/uuid": "^4.0",
         "phpunit/phpunit": "^9.5",
         "broadway/coding-standard": "^1.2",
-        "phpstan/phpstan": "^1.0"
+        "phpstan/phpstan": "^2.0"
     },
     "suggest": {
         "ramsey/uuid": "Allows creating UUIDs"
