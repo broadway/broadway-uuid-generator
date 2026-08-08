@@ -13,13 +13,12 @@ declare(strict_types=1);
 
 namespace Broadway\UuidGenerator\Converter;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class BinaryUuidConverterTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_converts_string_uuid_to_binary_uuid(): void
     {
         $binary = BinaryUuidConverter::fromString('260b70eb-a5b7-4fde-916a-4cc021745c13');
@@ -27,9 +26,7 @@ class BinaryUuidConverterTest extends TestCase
         $this->assertEquals('0x260b70eba5b74fde916a4cc021745c13', '0x'.bin2hex($binary));
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_throws_when_converting_invalid_string_uuid_to_binary_uuid(): void
     {
         $this->expectException('InvalidArgumentException');
@@ -37,9 +34,7 @@ class BinaryUuidConverterTest extends TestCase
         BinaryUuidConverter::fromString('YOLO');
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_converts_binary_uuid_to_string_uuid(): void
     {
         $this->assertEquals(
@@ -48,9 +43,7 @@ class BinaryUuidConverterTest extends TestCase
         );
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_throws_when_converting_invalid_binary_uuid_to_string_uuid(): void
     {
         $this->expectException('InvalidArgumentException');

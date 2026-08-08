@@ -13,14 +13,13 @@ declare(strict_types=1);
 
 namespace Broadway\UuidGenerator\Rfc4122;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid;
 
 class Version4GeneratorTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_should_generate_a_string(): void
     {
         $generator = new Version4Generator();
@@ -29,9 +28,7 @@ class Version4GeneratorTest extends TestCase
         $this->assertIsString($uuid);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_should_generate_a_version_4_uuid(): void
     {
         $generator = new Version4Generator();
