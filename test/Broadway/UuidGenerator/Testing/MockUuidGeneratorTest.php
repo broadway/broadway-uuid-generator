@@ -13,13 +13,12 @@ declare(strict_types=1);
 
 namespace Broadway\UuidGenerator\Testing;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class MockUuidGeneratorTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function it_generates_a_string(): void
     {
         $generator = $this->createMockUuidGenerator();
@@ -28,9 +27,7 @@ class MockUuidGeneratorTest extends TestCase
         $this->assertIsString($uuid);
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function it_generates_the_same_string(): void
     {
         $generator = $this->createMockUuidGenerator();
